@@ -28,5 +28,24 @@ namespace Lab4
         {
 
         }
+
+        private void rotateButton_Click(object sender, EventArgs e)
+        {
+            if (radioButton90.Checked)
+            {
+                pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                pictureBox1.Refresh();
+            }
+            if (radioButton180.Checked)
+            {
+                pictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                pictureBox1.Refresh();
+            }
+            if (radioButton270.Checked)
+            {
+                pictureBox1.Image.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                pictureBox1.Refresh();
+            }
+        }
     }
 }
