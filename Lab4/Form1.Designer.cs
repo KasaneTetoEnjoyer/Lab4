@@ -30,6 +30,7 @@
         {
             pictureBox1 = new PictureBox();
             Load = new Button();
+            greenButton = new Button();
             radioButton90 = new RadioButton();
             radioButton180 = new RadioButton();
             radioButton270 = new RadioButton();
@@ -121,6 +122,16 @@
             revButton.UseVisualStyleBackColor = true;
             revButton.Click += revButton_Click;
             // 
+            // greenButton
+            // 
+            greenButton.Location = new Point(69, 220);
+            greenButton.Name = "greenButton";
+            greenButton.Size = new Size(75, 23);
+            greenButton.TabIndex = 2;
+            greenButton.Text = "Only green";
+            greenButton.UseVisualStyleBackColor = true;
+            greenButton.Click += greenButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -132,6 +143,7 @@
             Controls.Add(radioButton270);
             Controls.Add(radioButton180);
             Controls.Add(radioButton90);
+            Controls.Add(greenButton);
             Controls.Add(Load);
             Controls.Add(pictureBox1);
             Name = "Form1";
@@ -151,5 +163,6 @@
         private Button rotateButton;
         private Button invButton;
         private Button revButton;
+        private Button greenButton;
     }
 }
